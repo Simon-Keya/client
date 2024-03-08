@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './Header.module.scss';  // Import SCSS file
 
-const Header = () => {
+const BlogPostsCatalogHeader: React.FC = () => {
   return (
-    <header>
-      <h1>Blog Post Catalog</h1>
+    <header className={styles.blogPostsCatalogHeader}>
+      <h2>Latest Blog Posts</h2>
     </header>
   );
 };
 
-export default Header;
+export default BlogPostsCatalogHeader;

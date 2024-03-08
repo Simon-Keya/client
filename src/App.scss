@@ -1,0 +1,93 @@
+/* Global styles */
+body {
+  @apply font-sans m-0 p-0; /* Margin: 0; Padding: 0; Font family: sans-serif */
+}
+
+/* Header styles */
+.header {
+  @apply bg-gray-800 text-white px-4 py-2; /* Background: #333; Color: #fff; Padding: 20px */
+}
+
+.header h1 {
+  @apply text-xl m-0; /* Font size: 24px; Margin: 0 */
+}
+
+.header ul {
+  @apply list-none p-0 m-0; /* List style: none; Padding: 0; Margin: 0 */
+}
+
+.header li {
+  @apply inline-block mr-2; /* Display: inline-block; Margin-right: 10px */
+}
+
+.header a {
+  @apply text-white hover:text-gray-200; /* Color: #fff; Text decoration: none; Hover: #aaa */
+}
+
+/* Hero section styles */
+.hero {
+  @apply bg-gray-200 px-4 py-8 text-center; /* Background: #f2f2f2; Padding: 50px; Text-align: center */
+}
+
+.hero h2 {
+  @apply text-3xl mt-0; /* Font size: 36px; Margin-top: 0 */
+}
+
+.hero p {
+  @apply text-lg; /* Font size: 18px */
+}
+
+.hero button {
+  @apply px-4 py-2 text-lg bg-gray-800 text-white rounded-md focus:outline-none; /* Padding: 10px 20px; Font size: 18px; Background: #333; Color: #fff; Border: none; Border-radius: 5px; Cursor: pointer */
+}
+
+/* Featured posts section styles */
+.featured-posts {
+  @apply px-4 py-8; /* Padding: 50px */
+}
+
+.featured-posts h3 {
+  @apply text-2xl mt-0; /* Font size: 24px; Margin-top: 0 */
+}
+
+.featured-posts .post {
+  @apply mb-4 p-4 border border-gray-300 rounded-md; /* Margin-bottom: 20px; Padding: 20px; Border: 1px solid #ccc */
+}
+
+.featured-posts .post img {
+  @apply w-full h-auto; /* Width: 100%; Height: auto */
+}
+
+/* Categories section styles */
+.categories {
+  @apply bg-gray-200 px-4 py-8; /* Background: #f2f2f2; Padding: 50px */
+}
+
+.categories h3 {
+  @apply text-2xl mt-0; /* Font size: 24px; Margin-top: 0 */
+}
+
+.categories ul {
+  @apply list-none p-0 m-0; /* List style: none; Padding: 0; Margin: 0 */
+}
+
+.categories li {
+  @apply inline-block mr-2; /* Display: inline-block; Margin-right: 10px */
+}
+
+.categories a {
+  @apply text-gray-800 hover:text-gray-600 px-2 py-1 rounded-md; /* Color: #333; Text decoration: none; Padding: 5px 10px; Border: 1px solid #ccc; Border-radius: 5px */
+}
+
+/* Footer styles */
+.footer {
+  @apply bg-gray-800 text-white px-4 py-2 text-center; /* Background: #333; Color: #fff; Padding: 20px; Text-align: center */
+}
+
+.footer p {
+  @apply text-sm m-0; /* Font size: 14px; Margin: 0 */
+}
+
+.footer a {
+  @apply text-white hover:text-gray-200; /* Color: #fff; Text decoration: none; Hover: #aaa */
+}

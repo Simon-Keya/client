@@ -1,0 +1,32 @@
+.featuredPostCard {
+  // Use Tailwind classes for layout and responsiveness
+  @apply mb-6 rounded-lg overflow-hidden shadow-sm;
+
+  // Custom SCSS for hover effect (optional)
+  &:hover {
+    @apply transform scale-101 transition duration-300 ease-in-out;
+  }
+}
+
+.featuredPostCard img {
+  // Use Tailwind classes for image sizing
+  @apply w-full h-48 object-cover;
+}
+
+.featuredPostCard .content {
+  // Use Tailwind classes for layout and padding
+  @apply px-6 py-4;
+
+  // Custom SCSS for readability
+  color: #333;
+}
+
+.featuredPostCard .title {
+  // Use Tailwind classes for typography
+  @apply text-xl font-medium mb-2;
+}
+
+.featuredPostCard .excerpt {
+  // Use Tailwind classes for text styling with line-clamp for multi-line truncation
+  @apply text-gray-700 line-clamp-3;
+}

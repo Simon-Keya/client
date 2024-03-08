@@ -1,0 +1,44 @@
+.pagination {
+  // Use Tailwind classes for layout and spacing
+  @apply flex items-center justify-center mt-4;
+}
+
+.pagination a {
+  // Use Tailwind classes for buttons
+  @apply px-3 py-2 rounded-md hover:bg-gray-200;
+
+  // Additional styling for active and disabled links (optional)
+  &.active {
+    @apply font-bold bg-gray-100;
+  }
+
+  &.disabled {
+    @apply text-gray-400 cursor-default;
+  }
+}
+.pagination {
+  // Use Tailwind classes for layout and spacing
+  @apply flex items-center justify-center mt-4;
+
+  // Responsive considerations using Tailwind utilities (optional)
+  @apply sm:justify-start md:justify-center; // Center on medium screens or left-align on small screens
+}
+
+.pagination a {
+  // Use Tailwind classes for buttons
+  @apply px-3 py-2 rounded-md hover:bg-gray-200;
+
+  // Additional styling for active and disabled links (optional)
+  &.active {
+    @apply font-bold bg-gray-100;
+  }
+
+  &.disabled {
+    @apply text-gray-400 cursor-default;
+  }
+}
+
+/* Additional Tips */
+.pagination a.active {
+  @apply text-blue-500; /* Change text color for active link */
+}

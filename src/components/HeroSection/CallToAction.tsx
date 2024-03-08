@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from '.../styles/HeroSection/CallToAction.module.scss';  // Import SCSS file
 
-const CallToAction = () => {
+const CallToAction: React.FC = () => {
   return (
-    <div className="call-to-action">
-      <h2>Explore the Latest Blog Posts</h2>
-      <button>Get Started</button>
+    <div className={styles.callToAction}>
+      <h2>Start Reading Today!</h2>
+      <button>Subscribe Now</button>
     </div>
   );
 };

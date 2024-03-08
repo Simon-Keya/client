@@ -1,0 +1,24 @@
+.navigation {
+  // Use Tailwind classes for layout and flexbox
+  @apply flex items-center justify-end;
+}
+
+.navigation ul {
+  // Use Tailwind classes for list styling
+  @apply list-none flex space-x-4;
+}
+
+.navigation ul li {
+  // Use Tailwind classes for list items
+  @apply px-4 py-2 hover:text-gray-700; // Hover effect
+}
+
+.navigation ul li a {
+  // Use Tailwind classes for links
+  @apply text-gray-500 font-medium;
+}
+
+.navigation ul li.active a {
+  // Optional for active link styling
+  @apply text-blue-500 font-bold;
+}

@@ -1,0 +1,26 @@
+.analyticsDashboard {
+  // Use Tailwind classes for layout and spacing (similar to others)
+  @apply px-6 py-4 mb-6 border rounded-lg shadow-sm bg-white; // White background
+
+  // Custom SCSS for a clear analytics dashboard section with contrasting border
+  border-color: #ddd;
+}
+
+.analyticsDashboard .charts {
+  // Use Tailwind classes for grid layout (consider specific charting libraries)
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.analyticsDashboard .chart {
+  // Use Tailwind classes for basic styling and padding
+  @apply p-4 rounded-lg shadow-sm bg-gray-100; // Light background within charts
+
+  // Consider using font icons for chart types (replace with your chosen library)
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .chart-icon {
+    @apply text-2xl text-gray-500; // Example font icon class
+  }
+}

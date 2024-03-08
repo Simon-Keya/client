@@ -1,0 +1,41 @@
+.blogPostCard {
+  // Use Tailwind classes for layout and responsiveness
+  @apply mb-6 rounded-lg shadow-sm overflow-hidden;
+
+  // Custom SCSS for an appealing blog post card
+  &:hover {
+    @apply transform scale-101 transition duration-300 ease-in-out;
+  }
+}
+
+.blogPostCard img {
+  // Use Tailwind classes for image sizing
+  @apply w-full h-48 object-cover;
+}
+
+.blogPostCard .content {
+  // Use Tailwind classes for layout and padding
+  @apply px-6 py-4;
+
+  // Custom SCSS for readability
+  color: #333;
+}
+
+.blogPostCard .title {
+  // Use Tailwind classes for typography
+  @apply text-xl font-medium mb-2;
+}
+
+.blogPostCard .excerpt {
+  // Use Tailwind classes for text styling with line-clamp for multi-line truncation
+  @apply text-gray-700 line-clamp-3;
+}
+
+/* Additional Tips */
+.blogPostCard .content {
+  @apply mb-4; /* Add some space between content and image */
+}
+
+.blogPostCard .title {
+  @apply mb-1; /* Reduce margin between title and excerpt */
+}

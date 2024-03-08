@@ -1,0 +1,28 @@
+.socialLinks {
+  // Use Tailwind classes for layout and spacing
+  @apply flex items-center justify-center mt-4;
+}
+
+.socialLinks a {
+  // Use Tailwind classes for icons and hover effects
+  @apply text-gray-500 hover:text-blue-500 mr-4;
+
+  // Replace with your actual social media icon classes
+  &:nth-child(1) {
+    @apply text-xl; /* Adjust class names for your icons (e.g., bi bi-twitter) */
+  }
+
+  &:nth-child(2) {
+    @apply text-xl; /* Adjust class names for your icons (e.g., fab fa-facebook-f) */
+  }
+
+  &:nth-child(3) {
+    /* Add styles for third social media link */
+    @apply text-xl; /* Adjust class names for your icons (e.g., fab fa-instagram) */
+  }
+
+  &:nth-child(4) {
+    /* Add styles for fourth social media link (and so on) */
+    @apply text-xl; /* Adjust class names for your icons */
+  }
+}

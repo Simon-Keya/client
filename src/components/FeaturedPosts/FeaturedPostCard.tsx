@@ -1,32 +1,22 @@
 import React from 'react';
+import styles from './FeaturedPostCard.module.scss';  // Import SCSS file
 
-interface FeaturedPost {
-  id: number;
-  title: string;
-  description: string;
-  imageUrl: string;
-}
-
-interface FeaturedPostCardProps {
-  post: FeaturedPost;
-  onPostClick: (post: FeaturedPost) => void;
-}
-
-const FeaturedPostCard: React.FC<FeaturedPostCardProps> = ({
-  post,
-  onPostClick,
-}) => {
-  const handlePostClick = () => {
-    onPostClick(post);
+interface FeaturedPostProps {
+  post: {
+    id: number;
+    title: string;
+    description: string;
+    imageUrl: string;
   };
+  onPostClick: () => void;
+}
 
+const FeaturedPostCard: React.FC<FeaturedPostProps> = ({ post, onPostClick }) => {
   return (
-    <div className="featured-post-card" onClick={handlePostClick}>
+    <div className={styles.featuredPostCard} onClick={onPostClick}>
       <img src={post.imageUrl} alt={post.title} />
-      <div className="post-details">
-        <h3>{post.title}</h3>
-        <p>{post.description}</p>
-      </div>
+      <h3>{post.title}</h3>
+      <p>{post.description}</p>
     </div>
   );
 };

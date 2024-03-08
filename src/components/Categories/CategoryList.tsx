@@ -1,43 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
+import styles from './CategoryList.module.scss';  // Import SCSS file
 
-interface Category {
-  id: number;
-  name: string;
+interface CategoryProps {
+  categories: string[];
+  onCategorySelect: (category: string) => void;
 }
 
-interface CategoryListProps {
-  categories: Category[];
-  onCategorySelect: (category: Category) => void;
-}
-
-const CategoryList: React.FC<CategoryListProps> = ({
-  categories,
-  onCategorySelect,
-}) => {
-  const [selectedCategory, setSelectedCategory] = useState<Category | null>(
-    null
-  );
-
-  const handleCategorySelect = (category: Category) => {
-    setSelectedCategory(category);
-    onCategorySelect(category);
-  };
-
+const CategoryList: React.FC<CategoryProps> = ({ categories, onCategorySelect }) => {
   return (
-    <div className="category-list">
-      <h3>Categories</h3>
-      <ul>
-        {categories.map((category) => (
-          <li
-            key={category.id}
-            onClick={() => handleCategorySelect(category)}
-            className={selectedCategory === category ? 'active' : ''}
-          >
-            {category.name}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={styles.categoryList}>
+      {categories.map((category) => (
+        <li key={category} onClick={() => onCategorySelect(category)}>
+          {category}
+        </li>
+      ))}
+    </ul>
   );
 };
 

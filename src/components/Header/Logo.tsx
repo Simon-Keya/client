@@ -1,10 +1,9 @@
 import React from 'react';
+import styles from '.../styles/Header/Logo.module.scss';  // Import SCSS file
 
-const Logo = () => {
+const Logo: React.FC = () => {
   return (
-    <div className="logo">
-      <h1 className="text-primary">BlogLogo</h1>
-    </div>
+    <h1 className={styles.logo}>My Blog</h1>
   );
 };
 

@@ -12,13 +12,14 @@ import AdminDashboard from './components/AdminDashboard/Header';
 
 function App() {
   return (
-    <div>
+    // Wrap everything within a single React Fragment (`<>...</>`)
+    <>
       <Router>
         <Logo />
         <Route path="/" element={<CallToAction />} />
         <Route
           path="/featured"
-          element={
+          element={(
             <FeaturedPostCard
               post={{
                 id: 1,
@@ -28,7 +29,7 @@ function App() {
               }}
               onPostClick={() => {}}
             />
-          }
+          )}
         />
         <Route path="/categories" element={<CategoryList categories={[]} onCategorySelect={() => {}} />} />
         <Route path="/blog" element={<BlogPostsCatalog />} />
@@ -37,7 +38,7 @@ function App() {
         <Route path="/admin" element={<AdminDashboard />} />
       </Router>
       <SocialLinks links={[]} />
-    </div>
+    </>
   );
 }
 

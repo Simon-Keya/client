@@ -1,0 +1,27 @@
+.userProfile {
+  // Use Tailwind classes for layout and spacing
+  @apply px-6 py-4 mb-6 border rounded-lg shadow-sm;
+
+  // Custom SCSS for a visually distinct user profile section
+  background-color: #f5f5f5;
+}
+
+.userProfile .info {
+  // Use Tailwind classes for layout and text styling
+  @apply flex items-center mb-2;
+}
+
+.userProfile .info img {
+  // Use Tailwind classes for image size
+  @apply w-16 h-16 rounded-full mr-4;
+}
+
+.userProfile .info h3 {
+  // Use Tailwind classes for heading style
+  @apply text-xl font-medium;
+}
+
+.userProfile .info p {
+  // Use Tailwind classes for text styling
+  @apply text-gray-700 text-sm;
+}

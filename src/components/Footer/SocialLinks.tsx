@@ -1,10 +1,9 @@
 import React from 'react';
+import styles from './SocialLinks.module.scss';  // Import SCSS file
 
 interface SocialLink {
-  id: number;
-  name: string;
-  url: string;
   icon: string;
+  url: string;
 }
 
 interface SocialLinksProps {
@@ -13,13 +12,15 @@ interface SocialLinksProps {
 
 const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => {
   return (
-    <div className="social-links">
+    <ul className={styles.socialLinks}>
       {links.map((link) => (
-        <a key={link.id} href={link.url} target="_blank" rel="noopener noreferrer">
-          <img src={link.icon} alt={link.name} />
-        </a>
+        <li key={link.url}>
+          <a href={link.url} target="_blank" rel="noopener noreferrer">
+            <i className={`fa fa-${link.icon}`} />
+          </a>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

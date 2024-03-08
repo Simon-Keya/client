@@ -1,0 +1,19 @@
+.categoryList {
+  // Use Tailwind classes for layout and spacing
+  @apply flex flex-wrap justify-center;
+}
+
+.categoryList li {
+  // Use Tailwind classes for list items and margins
+  @apply mr-4 mb-2;
+}
+
+.categoryList a {
+  // Use Tailwind classes for links and hover effect
+  @apply px-4 py-2 rounded-md text-gray-700 hover:text-blue-500 font-medium;
+}
+
+.categoryList a.active {
+  // Optional styling for active category
+  @apply bg-gray-200;
+}

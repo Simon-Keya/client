@@ -1,0 +1,38 @@
+.commentsSection {
+  // Use Tailwind classes for layout and spacing
+  @apply px-6 py-4 border-b border-gray-200;
+}
+
+.commentsSection .comment {
+  // Use Tailwind classes for layout and spacing within comments
+  @apply mb-4 border-b border-gray-100 px-4 py-2;
+}
+
+.commentsSection .comment .author {
+  // Use Tailwind classes for typography
+  @apply font-medium text-gray-700 mb-1;
+}
+
+.commentsSection .comment .content {
+  // Use Tailwind classes for text styling
+  @apply text-gray-600;
+}
+
+.commentsSection .form {
+  // Use Tailwind classes for layout and spacing within the comment form
+  @apply flex flex-wrap mt-4;
+}
+
+.commentsSection .form textarea {
+  // Use Tailwind classes for textarea styling
+  @apply w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.commentsSection .form button {
+  // Use Tailwind classes for button styling with hover and active states
+  @apply px-4 py-2 ml-4 bg-blue-500 hover:bg-blue-700 text-white rounded-md transition duration-300 ease-in-out;
+
+  &:active {
+    @apply transform scale-95; /* Optional subtle scale down on button click */
+  }
+}

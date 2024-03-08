@@ -1,0 +1,20 @@
+.searchBar {
+  // Use Tailwind classes for layout and spacing
+  @apply mb-4 flex rounded-md overflow-hidden;
+
+  // Responsive considerations using Tailwind utilities
+  @apply sm:w-full md:w-3/4 lg:w-1/2; // Adjust widths for different screen sizes
+
+  // Custom SCSS for a visually appealing search bar
+  @apply w-full px-4 py-2 bg-white shadow-sm;
+}
+
+.searchBar input[type="text"] {
+  // Use Tailwind classes for input styling
+  @apply flex-grow focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.searchBar button {
+  // Use Tailwind classes for button styling
+  @apply px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded-r-md;
+}

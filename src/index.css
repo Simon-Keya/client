@@ -1,149 +1,24 @@
-/* Reset default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
-  margin: 0;
-  padding: 0;
+/* Import Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom SCSS styles if needed */
+
+/* Example custom mixin */
+@mixin button-style($color, $text-color) {
+  @apply px-4 py-2 rounded-md focus:outline-none;
+  background-color: $color;
+  color: $text-color;
 }
 
-/* Global styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+/* Example custom class extending Tailwind classes */
+.button-primary {
+  @include button-style(#333, #fff);
 }
 
-/* Header styles */
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.header ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Hero section styles */
-.hero {
-  background-color: #f2f2f2;
-  padding: 50px;
-  text-align: center;
-}
-
-.hero h2 {
-  margin-top: 0;
-  font-size: 36px;
-}
-
-.hero p {
-  font-size: 18px;
-}
-
-.hero button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Featured posts section styles */
-.featured-posts {
-  padding: 50px;
-}
-
-.featured-posts h3 {
-  margin-top: 0;
-  font-size: 24px;
-}
-
-.featured-posts .post {
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-.featured-posts .post img {
-  width: 100%;
-  height: auto;
-}
-
-/* Categories section styles */
-.categories {
-  background-color: #f2f2f2;
-  padding: 50px;
-}
-
-.categories h3 {
-  margin-top: 0;
-  font-size: 24px;
-}
-
-.categories ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.categories li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.categories a {
+.button-secondary {
+  @extend .button-primary;
+  background-color: #ddd;
   color: #333;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
-
-/* Footer styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 14px;
-}
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Add more custom styles based on your requirements below */
-
-/* Example: Center align the content */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-}
-
-/* Add more custom styles based on your requirements */
-
