@@ -1,23 +1,16 @@
-// BlogPostDetail/Header.tsx
 import React from 'react';
-import styles from './Header.module.scss';  // Import SCSS file
 
-interface BlogPost {
-  id: number;
-  title: string;
-  author: string;
-  date: string;
+interface HeaderProps {
+  post: any;
 }
 
-const BlogPostDetailHeader: React.FC<BlogPost> = ({ id, title, author, date }) => {
+const Header: React.FC<HeaderProps> = ({ post }) => {
   return (
-    <header className={styles.blogPostDetailHeader}>
-      <h1>{title}</h1>
-      <p>
-        By {author} on {date}
-      </p>
-    </header>
+    <div className="header">
+      <h1>{post.title}</h1>
+      <h2>{post.author}</h2>
+    </div>
   );
 };
 
-export default BlogPostDetailHeader;
+export default Header;

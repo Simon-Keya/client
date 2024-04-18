@@ -1,8 +1,7 @@
 .adminDashboardHeader {
-    // Use Tailwind classes for layout and background
-    @apply px-6 py-4 bg-gray-800 flex items-center justify-between text-white;
-  
-    // Custom SCSS for a distinct admin header with contrasting border
-    border-b border-gray-700;
-  }
-  
+  /* Use Tailwind classes for layout and background */
+  @apply px-6 py-4 bg-gray-800 flex items-center justify-between text-white;
+
+  /* Custom SCSS for a distinct admin header with contrasting border */
+  border-bottom: 1px solid #707070; /* Using longhand property instead of shorthand */
+}

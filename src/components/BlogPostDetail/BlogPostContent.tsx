@@ -1,9 +1,14 @@
 import React from 'react';
-import styles from './BlogPostContent.module.scss';  // Import SCSS file
 
-const BlogPostContent: React.FC<{ content: string }> = ({ content }) => {
+interface BlogPostContentProps {
+  post: any;
+}
+
+const BlogPostContent: React.FC<BlogPostContentProps> = ({ post }) => {
   return (
-    <div className={styles.blogPostContent} dangerouslySetInnerHTML={{ __html: content }} />
+    <div className="blog-post-content">
+      <p>{post.content}</p>
+    </div>
   );
 };
 
